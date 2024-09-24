@@ -1,15 +1,12 @@
 {
   "name": "projeto_4_exercicio",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",  // Adicione isto aqui
   "scripts": {
     "dev": "gulp watch",
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
     "gulp": "^5.0.0",
     "gulp-imagemin": "^9.1.0",
