@@ -4,18 +4,22 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp watch",
-    "build": "[my-framework] build --output public",
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-imagemin": "^7.1.0",
+    "gulp": "^5.0.0",
+    "gulp-imagemin": "^9.1.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.77.2",
     "yargs": "^17.7.2"
+  },
+  "dependencies": {
+    "got": "^14.4.2",
+    "rimraf": "^6.0.1"
   }
 }
