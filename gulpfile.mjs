@@ -28,9 +28,10 @@ function scripts() {
     .pipe(gulp.dest('./public/js'));  // Certifique-se que a pasta ./public/js existe
 }
 
-exports.default = gulp.parallel(styles, images, scripts);
+// Corrigindo a exportação para o formato ESM
+export default gulp.parallel(styles, images, scripts);
 
-exports.watch = function() {
+export function watch() {
   gulp.watch('./src/styles/*.scss', gulp.parallel(styles));
   gulp.watch('./src/scripts/*.js', gulp.parallel(scripts));
-};
+}
