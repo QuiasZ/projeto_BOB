@@ -1,0 +1,87 @@
+@use 'variaveis';
+
+.episodes {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+
+    @media (max-width: 768px) {
+        max-width: 768px;
+        width: 90%;
+        padding-bottom: 60px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1023px) {
+        max-width: 1023px;
+        width: 90%;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: variaveis.$corSecundaria;
+        margin-bottom: 60px;
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 28px;
+                padding-right: 8px;
+            }
+
+            h3 {
+                font-size: 22px;
+            }
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4%;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2%;
+        }
+
+        &__item {
+            color: variaveis.$corSecundaria;
+            overflow: hidden; /* Garantir que os efeitos de zoom não "escapem" do item */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+            border-radius: 8px; /* Adicionar borda arredondada ao item */
+            border: 8px solid variaveis.$corFundo;
+            color: #fff;
+
+            img {
+                display: block;
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            span {
+                display: block;
+                margin: 8px 0;
+            }
+
+            p {
+                margin: 0;
+                padding-bottom: 24px;
+
+                @media (max-width: 768px) {
+                    padding-bottom: 70px;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05); /* Aumenta a escala do item */
+                box-shadow: 0 8px 16px rgba(173, 216, 230, 0.3); /* Sombra azul clara */
+            }
+        }
+    }
+}

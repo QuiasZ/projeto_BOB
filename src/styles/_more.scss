@@ -1,0 +1,39 @@
+@use 'variaveis';
+
+.more {
+    max-width: 1024px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 60px 0;
+
+    @media (max-width: 768px) {
+        max-width: 768px;
+        width: 90%;
+    }
+
+    @media (min-width: 769px) and (max-width: 1023px) {
+        max-width: 1023px;
+        width: 90%;
+    }
+
+    h2 {
+        text-align: center;
+        color: variaveis.$corSecundaria;
+        margin-bottom: 60px;
+    }
+
+    &__container-video {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            height: auto;
+            width: 90%;
+        }
+
+        .video {
+            border-radius: 8px;
+        }
+    }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 4</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__title">
+                <a href="#home">Band Of Brothers</a>
+            </h1>
+            <div class="menu-hamburguer" id="menu-toggle">
+                <box-icon id="icon" color=" #eaeaea" name='menu' type='regular' size='lg'></box-icon>
+            </div>
+            <nav class="header__buttons" id="header-buttons">
+                <ul class="header__list">
+                    <li class="header__list__item">
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="#sobre">
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="#episodios">
+                            Episódios
+                        </a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="#mais">
+                            Mais+
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" id="home">
+        <div class="hero__content">
+            <img class="hero__content__logo" src="./src/images/image_logo_hero_bob.avif" alt="Band Of Brothers logo hero">
+            <ul class="hero__content__list">
+                <li class="hero__content__list__item">14</li>
+                <li class="hero__content__list__item">2001</li>
+                <li class="hero__content__list__item">1 Temporada</li>
+                <li class="hero__content__list__item">Drama</li>
+                <li class="hero__content__list__item">Ação</li>
+            </ul>
+            <p class="hero__content__text text">
+                Minissérie em dez capítulos que mostra a trajetória dos integrantes do grupo de elite de paraquedistas americanos na Segunda Guerra Mundial.
+            </p>
+            <div class="container__button">
+                <a class="button" href="#">Assistir</a>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="sobre">
+        <div class="about__content">
+            <h2 class="title">
+                Leia o <br>
+                <span class="title--big">Resumo</span>
+            </h2>
+            <div class="about__content__grid">
+                <img src="./dist/images/imagem_hero_band_of_brothers.jpg" alt="imagem serie band of brothers">
+                <div class="about__content__grid__text">
+                    <h3 class="title--small">Sobre a Série</h3>
+                    <p>
+                        Uma das minisséries de maior sucesso da HBO, Band of Brothers coloca o telespectador dentro do universo da Segunda Guerra Mundial, enquanto mostra de perto a saga da lendária Companhia Easy, formada por soldados que se distinguem pela coragem, sacrifício, camaradagem e heroísmo na defesa de seus ideais. Em dez episódios, acompanhamos desde o treinamento pesado dos militares, que começa em 1942, a sua chegada de para-quedas na França no Dia-D, em 1944, as suas ofensivas sempre na linha de frente do batalhão, até a tomada, em 1945, do refúgio de Hitler. Ao início de cada episódio, há o depoimento de veteranos da Companhia Easy, cujas experiências estão traduzidas neste drama, que mostra os momentos mais importantes vividos por cada um soldados. Além disso, grandes nomes produzem a minissérie, garantindo sua qualidade: Tom Hanks e Steven Spielberg, ambos em seu primeiro trabalho para a televisão.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="episodes" id="episodios">
+        <div class="episodes__title">
+            <h2 class="title">Episódios</h2>
+            <h3 class="title--small">Temporada 1</h3>
+        </div>
+        <ul class="episodes__list">
+            <li class="episodes__list__item">
+                <img src="./dist/images/bob_curahee.jpeg" alt="Currahee">
+                <span class="text">1. Currahee</span>
+                <p class="text--small">
+                    Voluntários que se tornaram paraquedistas dos EUA na 2ª Grande Guerra relembram a trajetória do grupo, conhecido como Easy Company. 
+                </p>
+            </li>
+            <li class="episodes__list__item">
+                <img src="./dist/images/bob_day_of_days.jpeg" alt="Days of Days">
+                <span class="text">2. Days of Days</span>
+                <p class="text--small">
+                    Dia D. O desembarque da Easy Company na Normandia não ocorre como previsto. Com espírito de liderança, Winters comanda primeira ofensiva. 
+                </p>
+            </li>
+            <li class="episodes__list__item">
+                <img src="./dist/images/bob_carentan.jpeg" alt="Carentan">
+                <span class="text">3. Carentan</span>
+                <p class="text--small">
+                    Novamente reunidos, os homens da Easy Company recebem a ordem de retomar a vila de Caretan. Combate sangrento deixa mortos e sequelas.
+                </p>
+            </li>
+            <li class="episodes__list__item">
+                <img src="./dist/images/bob_replacements.jpeg" alt="Replacements">
+                <span class="text">4. Replacements</span>
+                <p class="text--small">
+                    A Easy Company incorpora novos paraquedistas, mas encontro com os veteranos é tenso. Operação Market Garden leva o grupo aos Países Baixos.
+                </p>
+            </li>
+            <li class="episodes__list__item">
+                <img src="./dist/images/bob_crossroads.jpeg" alt="Crossroads">
+                <span class="text">5. Crossroads</span>
+                <p class="text--small">
+                    Winters é promovido após arriscada missão. A Easy Company resgata soldados ingleses e enfrenta as linhas inimigas na contra-ofensiva alemã.  
+                </p>
+            </li>
+            <li class="episodes__list__item">
+                <img src="./dist/images/bob_bastogne.jpeg" alt="Bastogne">
+                <span class="text">6. Bastogne</span>
+                <p class="text--small">
+                    Os homens da Easy Company enfrentam a fome e o frio na floresta de Bastogne. Médico atende aos feridos, com ajuda de enfermeira belga.
+                </p>
+            </li>
+            <li class="episodes__list__item">
+                <img src="./dist/images/bob_carentan.jpeg" alt="The Breaking Point">
+                <span class="text">7. The Breaking Point</span>
+                <p class="text--small">
+                    A Easy Company invade Foy, apesar da falta de competência do comando. A batalha é sangrenta e o grupo paga um preço alto pela vitória. 
+                </p>
+            </li>
+            <li class="episodes__list__item">
+                <img src="./dist/images/bob_the_last_patrol.jpeg" alt="The Last Patrol">
+                <span class="text">8. The Last Patrol</span>
+                <p class="text--small">
+                    A missão da vez é resgatar prisioneiros de guerra em território inimigo. Hank Jones se oferece para comandar a patrulha da Easy Company. 
+                </p>
+            </li>
+            <li class="episodes__list__item">
+                <img src="./dist/images/bob_why_we_fight.jpeg" alt="Why We Fight">
+                <span class="text">9. Why We Fight</span>
+                <p class="text--small">
+                    A Easy Company chega à Alemanha e encontra um campo de concentração com prisioneiros abandonados. Chega a notícia da morte de Hitler.
+                </p>
+            </li>
+            <li class="episodes__list__item">
+                <img src="./dist/images/bob_points.jpeg" alt="Points">
+                <span class="text">10. Points</span>
+                <p class="text--small">
+                    A Easy Company invade a fortaleza de Hitler na Bavária. Pouco depois, a guerra chega ao fim, deixando suas marcas nos soldados da companhia. 
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section class="more" id="mais">
+        <h2 class="title">Mais+</h2>
+        <div class="more__container-video">
+            <iframe class="video" width="700" height="400" src="https://www.youtube.com/embed/KKRBAFlN5ww?si=5INUHps8kKxldDRP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__icons">
+                <a href="https://github.com/lucazmenezez" target="_blank">
+                    <i data-feather="github"></i>
+                </a>
+                <a href="mailto:menezeslucas24082002@gmail.com">
+                    <i data-feather="mail"></i>
+                </a>    
+            </div>
+            <div class="footer__text">
+                <p class="text--small">Criado por Lucas Menezes</p>
+                <p class="text--small">Este site não é oficial e não está afiliado à série "Band Of Brothers" ou à emissora.</p>
+                <p class="text--small">Este site é apenas para fins de estudo e entretenimento.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Código dos ícones -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>   
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>
